@@ -41,12 +41,7 @@ under the License.
   </head>
 
   <body class="<%= page_classes %>">
-    <a href="#" id="nav-button">
-      <span>
-        NAV
-        <%= image_tag('navbar.png') %>
-      </span>
-    </a>
+    <%= partial 'shared/header' %>
     <div class="tocify-wrapper">
       <%= image_tag "logo.png" %>
       <% if language_tabs %>
@@ -98,5 +93,6 @@ under the License.
         <% end %>
       </div>
     </div>
+    <%= partial 'shared/footer' %>
   </body>
 </html>
