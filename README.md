@@ -1,1 +1,1 @@
-# radiant-earth-doc-api
+# Documentation of Radiant-Earth API
