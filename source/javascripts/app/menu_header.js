@@ -2,7 +2,7 @@
   'use strict';
 
   var responsiveMenu = function() {
-    
+
   };
 
   $(responsiveMenu);

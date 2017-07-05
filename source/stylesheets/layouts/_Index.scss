@@ -1,0 +1,143 @@
+.l-index {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .l-index__search {
+    max-width: rem(200px);
+  }
+
+  .l-index__nav-section {
+    padding-left: 20px;
+    margin-top: 34px;
+
+    .tocify-header {
+      list-style: none;
+      margin-bottom: 30px;
+      padding-left: 0;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .tocify-item {
+        a {
+          color: $white;
+          letter-spacing: 1px;
+          font-weight: $font-weight-semibold;
+          font-size: $ff2-size-s;
+          font-family: $font-family-2;
+          text-transform: uppercase;
+        }
+      }
+    }
+
+    .tocify-subheader {
+      list-style: none;
+      padding-left: 20px;
+
+      .tocify-item {
+        margin-bottom: 10px;
+
+        a {
+          text-transform: none;
+        }
+
+        &:first-of-type {
+          margin-top: 10px;
+        }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .tocify-wrapper {
+    padding-left: 20px;
+    margin-top: 142px;
+    transition: left 0.3s ease-in-out;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 230px;
+
+    &.-fixed {
+      position: fixed;
+      margin-top: 10px;
+    }
+  }
+
+  .page-wrapper {
+    margin-left: 230px;
+    position: relative;
+    z-index: 10;
+    min-height: 100%;
+    padding-bottom: 1px;
+
+    .content {
+      width: 50%;
+      padding: 20px;
+      position: relative;
+      z-index: 30;
+
+      * {
+        font-family: $font-family-2;
+        color: $white;
+      }
+    }
+
+    .dark-box {
+      padding: 20px;
+      width: 50%;
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      padding-right: 0;
+
+      .lang-selector{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        height: rem(40px);
+        max-height: rem(40px);
+        margin-top: rem(5px);
+        border-radius: rem(100px);
+        background-color: rgba($color-3, .5);
+
+        &.-fixed {
+          position: fixed;
+          margin-top: 10px;
+          top: 0;
+        }
+
+        a {
+          display: flex;
+          font-family: $font-family-2;
+          flex-basis: calc(100% / 3);
+          align-items: center;
+          justify-content: center;
+          padding-right: rem(55px);
+          padding-left: rem(55px);
+          cursor: pointer;
+          font-size: $ff2-size-xs;
+          font-weight: $font-weight-semibold;
+          line-height: 1.67;
+          color: ($white, .5);
+          text-transform: uppercase;
+
+          &.active {
+            border-radius: rem(100px);
+            background-color: $white;
+            color: $color-2;
+          }
+        }
+      }
+    }
+  }
+}
