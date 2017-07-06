@@ -234,4 +234,20 @@ $second-yellow: #f1d32f;
       padding: $code-annotation-padding;
     }
   }
+
+  .highlight {
+    .p {
+      color: $white;
+    }
+
+    .mi,
+    .nt,
+    .err {
+      color: $color-5;
+    }
+
+    .s2 {
+      color: $color-4;
+    }
+  }
 }

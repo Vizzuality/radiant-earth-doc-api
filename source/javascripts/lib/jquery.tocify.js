@@ -314,7 +314,6 @@
         },
 
         _setActiveElement: function(pageload) {
-
             var self = this,
 
                 hash = window.location.hash.substring(1),
@@ -540,7 +539,6 @@
 
             // Event delegation that looks for any clicks on list item elements inside of the HTML element calling the plugin
             this.element.on("click.tocify", "li", function(event) {
-
                 if(self.options.history) {
 
                     window.location.hash = $(this).attr("data-unique");
@@ -1010,7 +1008,6 @@
         // ---------
         //      Scrolls to a specific element
         _scrollTo: function(elem) {
-
             var self = this,
                 duration = self.options.smoothScroll || 0,
                 scrollTo = self.options.scrollTo;
@@ -1022,7 +1019,7 @@
                 $("html, body").animate({
 
                     // Sets the jQuery `scrollTop` to the top offset of the HTML div tag that matches the current list item's `data-unique` tag
-                    "scrollTop": $('div[data-unique="' + elem.attr("data-unique") + '"]').next().offset().top - ($.isFunction(scrollTo) ? scrollTo.call() : scrollTo) + "px"
+                    "scrollTop": ($('div[data-unique="' + elem.attr("data-unique") + '"]').next().offset().top - ($.isFunction(scrollTo) ? scrollTo.call() : scrollTo) - 70 ) + "px"
 
                 }, {
 

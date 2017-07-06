@@ -45,4 +45,3 @@
   $(animate);
 
 })(window);
-
