@@ -2,7 +2,11 @@
   position: relative;
   width: 100%;
   height: $header-height;
-  z-index: 4;
+  z-index: 30;
+
+  .columns {
+    padding: 0;
+  }
 
   .icon-logo {
     width: rem(150px);

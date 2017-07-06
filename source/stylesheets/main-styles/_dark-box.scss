@@ -1,0 +1,54 @@
+.dark-box {
+  position: absolute;
+  top: rem(-80px);
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  padding: rem(20px);
+  padding-right: 0;
+  z-index: 60;
+
+  .lang-selector-contain {
+    position: relative;
+  }
+
+  .lang-selector {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    height: rem(40px);
+    max-height: rem(40px);
+    margin-top: rem(5px);
+    border-radius: rem(100px);
+    background-color: rgba($color-3, .5);
+    z-index: 40;
+
+    &.-fixed {
+      position: fixed;
+      top: 0;
+      margin-top: rem(10px);
+    }
+
+    a {
+      display: flex;
+      flex-basis: calc(100% / 3);
+      align-items: center;
+      justify-content: center;
+      padding-right: rem(55px);
+      padding-left: rem(55px);
+      color: $white;
+      font-family: $font-family-2;
+      font-size: $ff2-size-xs;
+      font-weight: $font-weight-semibold;
+      line-height: 1.67;
+      text-transform: uppercase;
+      cursor: pointer;
+
+      &.active {
+        border-radius: rem(100px);
+        background-color: $white;
+        color: $color-2;
+      }
+    }
+  }
+}

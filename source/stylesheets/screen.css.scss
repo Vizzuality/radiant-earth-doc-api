@@ -5,6 +5,8 @@
 @import './main-styles/fonts';
 @import './main-styles/foundation';
 @import './main-styles/layout';
+@import './main-styles/content';
+@import './main-styles/dark-box';
 
 @import './components/Header';
 @import './components/Footer';
@@ -12,6 +14,5 @@
 @import './components/BurgerMenu';
 @import './components/Button';
 @import './components/SearchInput';
-@import './components/CodeContainer';
 
 @import './layouts/Index';

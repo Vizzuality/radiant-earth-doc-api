@@ -7,3 +7,24 @@ $screen-xl: 1024px;
 $screen-xxl: 1080px;
 
 $header-height: rem(118px);
+
+$aside-notice-bg: #8fbcd4 !default;
+$aside-warning-bg: #c97a7e !default;
+$aside-success-bg: #6ac174 !default;
+$search-notice-bg: #c97a7e !default;
+$nav-width: 230px !default;
+$examples-width: 50% !default;
+$logo-margin: 20px !default;
+$main-padding: 28px !default;
+$nav-padding: 15px !default;
+$nav-v-padding: 10px !default;
+$nav-indent: 10px !default;
+$code-annotation-padding: 13px !default;
+$h1-margin-bottom: 21px !default;
+$tablet-width: 930px !default;
+$phone-width: $tablet-width - $nav-width !default;
+
+%break-words {
+  hyphens: auto;
+  word-break: break-all;
+}
