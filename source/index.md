@@ -26,8 +26,6 @@ This example API documentation page was created with [Slate](http://github.com/t
 
 # Authentication
 
-> To authorize, use this code:
-
 ```ruby
 require 'kittn'
 
@@ -46,17 +44,11 @@ curl "api_endpoint_here"
   -H "Authorization: meowmeowmeow"
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
-
 Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
 
 Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
 `Authorization: meowmeowmeow`
-
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
 
 # Kittens
 
@@ -105,8 +97,8 @@ curl "http://example.com/api/kittens"
 This endpoint retrieves all kittens.
 
 ### HTTP Request
-
 `GET http://example.com/kittens`
+
 
 ### Query Parameters
 
@@ -157,7 +149,6 @@ This endpoint retrieves a specific kitten.
 <aside class="warning">If you're not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside>
 
 ### HTTP Request
-
 `GET http://example.com/kittens/<ID>`
 
 ### URL Parameters

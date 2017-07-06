@@ -3,8 +3,8 @@
   ul {
     margin: 0;
     padding: 0;
-    list-style: none;
     font-size: 0;
+    list-style: none;
   }
 
   li {
@@ -13,7 +13,7 @@
     cursor: pointer;
 
     &:not(:last-child) {
-      margin-bottom: rem(49px);
+      margin-bottom: rem(50px);
     }
   }
 
@@ -25,10 +25,10 @@
 
   .bm-burger-button {
     position: absolute;
+    top: rem(42px);
+    right: rem(30px);
     width: rem(20px);
     height: rem(15px);
-    right: rem(30px);
-    top: rem(42px);
     cursor: pointer;
   }
 
@@ -38,10 +38,10 @@
   }
 
   .bm-cross-button {
+    top: rem(33px) !important;
+    right: rem(27px) !important;
     width: rem(27px) !important;
     height: rem(30px) !important;
-    right: rem(27px) !important;
-    top: rem(33px) !important;
   }
 
   .bm-cross {
@@ -59,7 +59,7 @@
   }
 
   .bm-item-list {
-    padding: rem(129px) rem(20px) rem(20px) rem(20px);
+    padding: rem(129px) rem(20px) rem(20px);
   }
 
   .bm-overlay {

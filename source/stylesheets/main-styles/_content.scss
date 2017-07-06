@@ -1,0 +1,249 @@
+$yellow: #f7e633;
+$second-yellow: #f1d32f;
+
+.content {
+  position: relative;
+  margin-top: rem(80px);
+  z-index: 30;
+
+
+  &::after {
+    display: block;
+    clear: both;
+    content: '';
+  }
+
+  &>h1,
+  &>h2,
+  &>h3,
+  &>h4,
+  &>h5,
+  &>h6,
+  &>p,
+  &>table,
+  &>ul,
+  &>ol,
+  &>aside,
+  &>dl {
+    @extend %left-col;
+    display: block;
+    margin-right: $examples-width;
+    padding: 0 $main-padding;
+    color: $white;
+    font-family: $font-family-2;
+    box-sizing: border-box;
+  }
+
+  &>ul,
+  &>ol {
+    padding-left: $main-padding + 15px;
+  }
+
+  &>h1,
+  &>h2,
+  &>div {
+    clear: both;
+  }
+
+  h1 {
+    margin-top: rem(75px);
+    font-size: $ff2-size-xl;
+
+    &:first-child {
+      margin-top: 0;
+      border-top-width: 0;
+    }
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  div {
+    &:first-child {
+      margin-top: 0;
+      border-top-width: 0;
+    }
+  }
+
+  h1 + h2,
+  h1 + div + h2 {
+    margin-top: $h1-margin-bottom * -1;
+    border-top: 0;
+  }
+
+  h2 {
+    margin-top: rem(20px);
+    font-size: $ff2-size-l;
+    font-weight: $font-weight-light;
+  }
+
+  h3 {
+    margin-top: rem(20px);
+    font-size: $ff2-size-xs;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+  }
+
+  hr {
+    margin: 2em 0;
+  }
+
+  table {
+    margin-bottom: 1em;
+    overflow: auto;
+
+    th,
+    td {
+      line-height: 1.6;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      padding: rem(5px) rem(10px);
+      vertical-align: bottom;
+    }
+
+    td {
+      padding: rem(10px);
+    }
+
+    thead {
+      tr {
+        th {
+          padding-right: rem(20px);
+          padding-left: 0;
+          font-size: $ff2-size-xs;
+          text-align: left;
+          text-transform: uppercase;
+          opacity: .5;
+
+          &:last-of-type {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    tbody {
+      * {
+        font-family: $font-family-3;
+        font-size: $ff2-size-s;
+      }
+
+      tr {
+        margin-bottom: rem(10px);
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
+        td {
+          padding-right: rem(20px);
+          padding-left: 0;
+
+          &:last-of-type {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  dt {
+    font-weight: $font-weight-semibold;
+  }
+
+  dd {
+    margin-left: rem(15px);
+  }
+
+  p,
+  li,
+  dt,
+  dd {
+    margin-top: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  code {
+    @extend %break-words;
+
+    * {
+      font-family: $font-family-3;
+      font-size: $ff2-size-xs;
+    }
+  }
+
+  pre>code {
+    padding: 0;
+    background-color: transparent;
+  }
+
+  aside {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    line-height: 1.6;
+
+    &.warning {
+      background-color: $aside-warning-bg;
+      text-shadow: 0 1px 0 lighten($aside-warning-bg, 15%);
+    }
+
+    &.success {
+      background-color: $aside-success-bg;
+      text-shadow: 0 1px 0 lighten($aside-success-bg, 15%);
+    }
+
+    &::before {
+      padding-right: .5em;
+      vertical-align: middle;
+    }
+  }
+
+  .search-highlight {
+    margin: rem(-2px);
+    padding: rem(2px);
+    border: 1px solid rgba($yellow, .5);
+    border-radius: 4px;
+    background: linear-gradient(to top left, $yellow 0%, $second-yellow 100%);
+    text-shadow: 1px 1px 0 $black;
+  }
+
+  .prettyprint {
+    display: inline-block;
+    margin-bottom: rem(10px);
+    padding: rem(10px) ;
+    background-color: rgba($color-3, .6);
+    color: rgba($white, .8);
+    font-family: $font-family-3;
+    font-size: $ff2-size-xs;
+    line-height: 1.71;
+  }
+
+  pre,
+  blockquote {
+    @extend %right-col;
+    width: $examples-width;
+    margin: 0;
+    padding: rem(30px) rem(20px);
+    float: right;
+    clear: right;
+    background-color: rgba($color-3, .6);
+    color: $white;
+    font-family: $font-family-3;
+    box-sizing: border-box;
+
+    &>p { margin: 0; }
+  }
+
+  blockquote {
+    &>p {
+      padding: $code-annotation-padding;
+    }
+  }
+}

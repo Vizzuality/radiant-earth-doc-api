@@ -16,7 +16,7 @@
   };
 
   var boxResize = function() {
-    var minWidth = ($('.content').width() + 20);
+    var minWidth = ($('.dark-box').width());
     $('.lang-selector').css('width', minWidth);
   };
 
