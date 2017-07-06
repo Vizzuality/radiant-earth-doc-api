@@ -29,6 +29,7 @@ GEM
     erubis (2.7.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    git-version-bump (0.15.1)
     haml (5.0.1)
       temple (>= 0.8.0)
       tilt
@@ -87,6 +88,9 @@ GEM
       activesupport (>= 3.1)
     puma (3.8.2)
     rack (1.6.8)
+    rack-contrib (1.4.0)
+      git-version-bump (~> 0.15)
+      rack (~> 1.4)
     rack-test (0.6.3)
       rack (>= 1.0)
     rake (10.4.2)
@@ -131,6 +135,7 @@ DEPENDENCIES
   middleman-gh-pages (~> 0.0.3)
   middleman-syntax (~> 2.0.0)
   puma
+  rack-contrib
   rake (~> 10.4.2)
   redcarpet (~> 3.2.2)
   rouge (~> 1.8.0)
