@@ -1,0 +1,39 @@
+.c-header {
+  position: relative;
+  width: 100%;
+  height: $header-height;
+  z-index: 30;
+
+  .columns {
+    padding: 0;
+  }
+
+  .icon-logo {
+    width: rem(150px);
+    height: rem(54px);
+  }
+
+  .c-header__content {
+    display: flex;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+
+  .c-nav {
+    display: none;
+  }
+
+  @media screen and (min-width: $screen-l) {
+
+    .c-burger-menu {
+      display: none;
+    }
+
+    .c-nav {
+      display: block;
+    }
+  }
+}

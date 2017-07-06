@@ -18,70 +18,58 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Radiant-Earth API! You can use our API to access images API endpoints, which can get information on various images in our database.
 
 We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](http://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
-
-# Authentication
-
-> To authorize, use this code:
+# Authentiiamgeion
 
 ```ruby
-require 'kittn'
+require 'radiant-earth'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = radiant-earth::APIClient.authorize!('images')
 ```
 
 ```python
-import kittn
+import radiant-earth
 
-api = kittn.authorize('meowmeowmeow')
+api = radiant-earth.authorize('images')
 ```
 
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: images"
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+radiant-earth uses API keys to allow access to the API. You can register a new radiant-earth API key at our [developer portal](http://example.com/developers).
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+radiant-earth expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+`Authorization: images`
 
-`Authorization: meowmeowmeow`
+# radiant-earth
 
-<aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
-</aside>
-
-# Kittens
-
-## Get All Kittens
+## Get All radiant-earth
 
 ```ruby
-require 'kittn'
+require 'radiant-earth'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+api = radiant-earth::APIClient.authorize!('images')
+api.radiant-earth.get
 ```
 
 ```python
-import kittn
+import radiant-earth
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+api = radiant-earth.authorize('images')
+api.radiant-earth.get()
 ```
 
 ```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+curl "http://example.com/api/radiant-earth"
+  -H "Authorization: images"
 ```
-
-> The above command returns JSON structured like this:
 
 ```json
 [
@@ -102,45 +90,40 @@ curl "http://example.com/api/kittens"
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all radiant-earth.
 
 ### HTTP Request
+`GET http://example.com/radiant-earth`
 
-`GET http://example.com/kittens`
 
 ### Query Parameters
 
 Parameter | Default | Description
 --------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+radiant-earth | false | If set to true, the result will also include iamges.
+available | true | If set to false, the result will include radiant-earth that have already been adopted.
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
-</aside>
 
 ## Get a Specific Kitten
 
 ```ruby
-require 'kittn'
+require 'radiant-earth'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
+api = radiant-earth::APIClient.authorize!('images')
+api.radiant-earth.get(2)
 ```
 
 ```python
-import kittn
+import radiant-earth
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
+api = radiant-earth.authorize('images')
+api.radiant-earth.get(2)
 ```
 
 ```shell
-curl "http://example.com/api/kittens/3"
-  -H "Authorization: meowmeowmeow"
+curl "http://example.com/api/radiant-earth/3"
+  -H "Authorization: images"
 ```
-
-> The above command returns JSON structured like this:
 
 ```json
 {
@@ -154,15 +137,11 @@ curl "http://example.com/api/kittens/3"
 
 This endpoint retrieves a specific kitten.
 
-<aside class="warning">If you're not using an administrator API key, note that some kittens will return 403 Forbidden if they are hidden for admins only.</aside>
-
 ### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
+`GET https://www.radiant.earth/<ID>`
 
 ### URL Parameters
 
 Parameter | Description
 --------- | -----------
-ID | The ID of the cat to retrieve
-
+ID | The ID of the iamge to retrieve

@@ -1,0 +1,42 @@
+.c-nav {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    list-style: none;
+  }
+
+  li {
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: $screen-l) {
+
+    ul {
+      text-align: right;
+    }
+
+    li {
+      display: inline-block;
+
+      &:not(:first-child) {
+        margin-left: rem(40px);
+      }
+
+      &.-selected {
+        &::before {
+          position: absolute;
+          bottom: rem(-1px);
+          left: 0;
+          width: 100%;
+          height: rem(2px);
+          background-color: $color-2;
+          content: '';
+        }
+      }
+    }
+  }
+}
