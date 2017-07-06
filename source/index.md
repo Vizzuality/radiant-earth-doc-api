@@ -22,7 +22,7 @@ Welcome to the Radiant-Earth API! You can use our API to access images API endpo
 
 We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-# Authentiiamgeion
+# Authentication
 
 ```ruby
 require 'radiant-earth'
@@ -48,9 +48,9 @@ radiant-earth expects for the API key to be included in all API requests to the 
 
 `Authorization: images`
 
-# radiant-earth
+# Images
 
-## Get All radiant-earth
+## Get All images
 
 ```ruby
 require 'radiant-earth'
@@ -90,7 +90,7 @@ curl "http://example.com/api/radiant-earth"
 ]
 ```
 
-This endpoint retrieves all radiant-earth.
+This endpoint retrieves all radiant-earth´s images.
 
 ### HTTP Request
 `GET http://example.com/radiant-earth`
@@ -100,11 +100,11 @@ This endpoint retrieves all radiant-earth.
 
 Parameter | Default | Description
 --------- | ------- | -----------
-radiant-earth | false | If set to true, the result will also include iamges.
+radiant-earth | false | If set to true, the result will also include images.
 available | true | If set to false, the result will include radiant-earth that have already been adopted.
 
 
-## Get a Specific Kitten
+## Get a Specific image
 
 ```ruby
 require 'radiant-earth'
@@ -135,7 +135,7 @@ curl "http://example.com/api/radiant-earth/3"
 }
 ```
 
-This endpoint retrieves a specific kitten.
+This endpoint retrieves a specific image.
 
 ### HTTP Request
 `GET https://www.radiant.earth/<ID>`
