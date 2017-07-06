@@ -34,6 +34,10 @@ $second-yellow: #f1d32f;
     box-sizing: border-box;
   }
 
+  p {
+    margin-top: rem(20px);
+  }
+
   &>ul,
   &>ol {
     padding-left: $main-padding + 15px;
@@ -64,12 +68,6 @@ $second-yellow: #f1d32f;
       margin-top: 0;
       border-top-width: 0;
     }
-  }
-
-  h1 + h2,
-  h1 + div + h2 {
-    margin-top: $h1-margin-bottom * -1;
-    border-top: 0;
   }
 
   h2 {
@@ -159,7 +157,6 @@ $second-yellow: #f1d32f;
     margin-left: rem(15px);
   }
 
-  p,
   li,
   dt,
   dd {
@@ -203,15 +200,6 @@ $second-yellow: #f1d32f;
       padding-right: .5em;
       vertical-align: middle;
     }
-  }
-
-  .search-highlight {
-    margin: rem(-2px);
-    padding: rem(2px);
-    border: 1px solid rgba($yellow, .5);
-    border-radius: 4px;
-    background: linear-gradient(to top left, $yellow 0%, $second-yellow 100%);
-    text-shadow: 1px 1px 0 $black;
   }
 
   .prettyprint {

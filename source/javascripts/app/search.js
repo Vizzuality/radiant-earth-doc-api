@@ -36,6 +36,8 @@
   }
 
   function search(event) {
+    $('.c-search-input').addClass('-open');
+    $('.l-index__nav-section').addClass('-hidden');
     unhighlight();
     searchResults.addClass('visible');
 
@@ -61,6 +63,12 @@
     } else {
       unhighlight();
       searchResults.removeClass('visible');
+    }
+
+    if (this.value === '') {
+      $('.search-results').html('');
+      $('.c-search-input').removeClass('-open');
+      $('.l-index__nav-section').removeClass('-hidden');
     }
   }
 

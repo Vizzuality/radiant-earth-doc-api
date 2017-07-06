@@ -5,6 +5,12 @@
   border-radius: rem(100px);
   background-color: rgba($color-3, .6);
 
+  &.-open {
+    border-radius: rem(20px);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
   input {
     position: relative;
     width: 100%;

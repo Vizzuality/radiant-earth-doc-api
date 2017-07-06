@@ -1,6 +1,6 @@
 .l-index {
-  padding-right: rem(20px);
-  padding-left: rem(20px);
+  padding-right: rem(50px);
+  padding-left: rem(50px);
 
   .l-index__search {
     max-width: rem(200px);
@@ -13,7 +13,7 @@
     left: 0;
     width: rem(230px);
     margin-top: rem(142px);
-    padding-left: rem(20px);
+    padding-left: rem(50px);
     transition: left .3s ease-in-out;
     z-index: 30;
     overflow-x: hidden;
@@ -27,6 +27,10 @@
     .l-index__nav-section {
       margin-top: rem(34px);
       padding-left: rem(20px);
+
+      &.-hidden {
+        display: none;
+      }
 
       .tocify-header {
         margin-bottom: rem(30px);
@@ -111,6 +115,32 @@
 
     &:hover { opacity: 1; }
     &.open {left: $nav-width}
+  }
+
+  .search-results {
+    position: relative;
+    padding-left: rem(20px);
+    background-color: rgba($color-3, .6);
+    list-style: none;
+
+    li {
+      margin-top: rem(20px);
+      font-family: $font-family-2;
+
+      &:first-of-type {
+        margin-top: 0;
+        padding-top: 20px;
+      }
+
+      &:last-of-type {
+        padding-bottom: 20px;
+      }
+
+      a {
+        color: $white;
+        font-family: $font-family-2;
+      }
+    }
   }
 }
 
