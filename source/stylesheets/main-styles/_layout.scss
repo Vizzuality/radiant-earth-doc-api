@@ -7,11 +7,11 @@ body {
 }
 
 html, body {
-  padding: 0;
+  height: 100%;
   margin: 0;
+  padding: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
   -webkit-text-size-adjust: none;
 }
 
@@ -26,6 +26,7 @@ html, body {
 }
 
 .box-blue {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -33,4 +34,8 @@ html, body {
   height: rem(60px);
   background-color: $color-1;
   z-index: 50;
+
+  @media screen and (min-width: $screen-xl) {
+    display: block;
+  }
 }
