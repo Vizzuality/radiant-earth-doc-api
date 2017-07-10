@@ -32,6 +32,7 @@ $second-yellow: #f1d32f;
     color: $white;
     font-family: $font-family-2;
     box-sizing: border-box;
+    word-wrap: break-word;
 
     @media screen and (min-width: $screen-l) {
       padding: 0 $main-padding;
