@@ -7,11 +7,13 @@
     if (window.scrollY > heightLimit) {
       $('.tocify-wrapper').addClass('-fixed');
       $('.lang-selector').addClass('-fixed');
+      $('#nav-button').addClass('-fixed');
     }
 
     if (window.scrollY < heightLimit) {
       $('.tocify-wrapper').removeClass('-fixed');
       $('.lang-selector').removeClass('-fixed');
+      $('#nav-button').removeClass('-fixed');
     }
   };
 

@@ -42,13 +42,30 @@ under the License.
 
   <body class="<%= page_classes %>">
     <div class="l-index">
+    <a href="#" id="nav-button">
+      <span>
+        <%= image_tag('navbar.png') %>
+      </span>
+    </a>
     <%= partial 'shared/header' %>
 
       <div class="l-index__filter-header">
 
       </div>
         <div class="tocify-wrapper">
-
+          <div class="lang-selector-contain">
+            <% if language_tabs %>
+              <div class="lang-selector lang-selector-mobile">
+                <% language_tabs.each do |lang| %>
+                  <% if lang.is_a? Hash %>
+                    <a href="#" data-language-name="<%= lang.keys.first %>"><%= lang.values.first %></a>
+                  <% else %>
+                    <a href="#" data-language-name="<%= lang %>"><%= lang %></a>
+                  <% end %>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
           <% if current_page.data.search %>
             <div class="l-index__search">
               <div class="search c-search-input">

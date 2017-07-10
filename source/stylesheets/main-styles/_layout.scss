@@ -26,6 +26,7 @@ html, body {
 }
 
 .box-blue {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -33,4 +34,8 @@ html, body {
   height: rem(60px);
   background-color: $color-1;
   z-index: 50;
+
+  @media screen and (min-width: $screen-l) {
+    display: block;
+  }
 }
