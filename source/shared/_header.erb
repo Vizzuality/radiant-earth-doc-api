@@ -13,47 +13,24 @@
                <li class="text -ff2-s -white"><a href="http://radiant-e.herokuapp.com/about">About</a></li>
             </ul>
          </div>
-         <div class="c-burger-menu">
-            <div>
-               <div class="bm-overlay"></div>
-               <div class="bm-menu-wrap">
-                  <div class="bm-menu">
-                     <nav class="bm-item-list">
-                       <%= image_tag('logo.svg') %>
-                        <ul style="display: block; outline: none;">
-                           <li class="text -ff2-s -white"><a href="#">Documentation</a></li>
-                           <li class="text -ff2-s -white"><a href="#">Data explorer</a></li>
-                           <li class="text -ff2-s -white"><a href="/blog">Blog</a></li>
-                           <li class="text -ff2-s -white"><a href="/about">About</a></li>
-                        </ul>
-                     </nav>
-                  </div>
-                  <div>
-                     <div class="bm-cross-button" >
-                       <span>
-                         <span class="bm-cross">
-                         </span>
-                         <span class="bm-cross">
-                         </span>
-                       </span>
-                       <button>Close Menu
-                       </button>
-                     </div>
-                  </div>
-               </div>
-               <div class="bm-burger-button">
-                 <span>
-                   <span class="bm-burger-bars">
-                   </span>
-                   <span class="bm-burger-bars">
-                   </span>
-                   <span class="bm-burger-bars">
-                   </span>
-                 </span>
-                 <button>Open Menu</button>
-               </div>
-            </div>
-         </div>
+      </div>
+      <div class="c-header__open-menu">
+        <%= image_tag('menu.svg') %>
       </div>
    </div>
+</div>
+<div class="c-mobile-menu">
+  <nav>
+    <div class="c-mobile-menu__header">
+      <%= image_tag('logo.svg') %>
+      <div class="c-header__close-menu">
+        <%= image_tag('close.svg') %>
+      </div>
+    </div>
+     <ul style="display: block; outline: none;">
+       <li class="text -ff2-s -white -selected -uppercase"><a href="#">API Documentation</a></li>
+       <li class="text -ff2-s -white -uppercase"><a href="http://radiant-e.herokuapp.com/blog">Blog</a></li>
+       <li class="text -ff2-s -white -uppercase"><a href="http://radiant-e.herokuapp.com/about">About</a></li>
+     </ul>
+  </nav>
 </div>

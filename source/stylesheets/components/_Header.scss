@@ -36,4 +36,21 @@
       display: block;
     }
   }
+
+  .c-header__open-menu {
+    display: block;
+    position: relative;
+    right: rem(25px);
+    cursor: pointer;
+
+    img {
+      width: rem(35px);
+      max-width: none;
+      height: rem(30px);
+    }
+
+    @media screen and (min-width: $screen-l) {
+      display: none;
+    }
+  }
 }
