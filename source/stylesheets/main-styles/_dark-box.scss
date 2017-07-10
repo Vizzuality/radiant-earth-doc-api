@@ -34,8 +34,8 @@
       flex-basis: calc(100% / 3);
       align-items: center;
       justify-content: center;
-      padding-right: rem(55px);
-      padding-left: rem(55px);
+      padding-right: rem(20px);
+      padding-left: rem(20px);
       color: $white;
       font-family: $font-family-2;
       font-size: $ff2-size-xs;
@@ -49,6 +49,14 @@
         background-color: $white;
         color: $color-2;
       }
+    }
+  }
+
+  .lang-selector-contain__text {
+    display: block;
+
+    &.-hidden {
+      display: none;
     }
   }
 }
