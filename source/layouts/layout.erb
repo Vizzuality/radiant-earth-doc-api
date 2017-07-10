@@ -91,9 +91,6 @@ under the License.
 
       <div class="page-wrapper">
         <div class="box-blue"></div>
-        <div class="dark-box">
-
-        </div>
         <div class="content">
           <%= yield %>
           <% current_page.data.includes && current_page.data.includes.each do |include| %>
@@ -103,6 +100,7 @@ under the License.
         <div class="dark-box">
           <div class="lang-selector-contain">
             <% if language_tabs %>
+              <span class="text -ff2-xs -white -uppercase lang-selector-contain__text">Choose a language for the examples</span>
               <div class="lang-selector">
                 <% language_tabs.each do |lang| %>
                   <% if lang.is_a? Hash %>

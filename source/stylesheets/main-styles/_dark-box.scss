@@ -51,4 +51,12 @@
       }
     }
   }
+
+  .lang-selector-contain__text {
+    display: block;
+
+    &.-hidden {
+      display: none;
+    }
+  }
 }
