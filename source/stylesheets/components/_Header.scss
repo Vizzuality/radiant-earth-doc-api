@@ -51,6 +51,11 @@
     right: rem(25px);
     cursor: pointer;
 
+    &:hover {
+      transition: .2s linear;
+      opacity: .8;
+    }
+
     img {
       width: rem(35px);
       max-width: none;
